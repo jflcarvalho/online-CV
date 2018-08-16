@@ -17,7 +17,10 @@ body {
   border-top-right-radius: .25em;
 }
 
-.rounded-md-right-to-bottom {
+.main-wrapper {
+  page-break-before: always;
+  padding: 3em;
+  background-color: #fff;
   border-bottom-left-radius: .25em;
   border-bottom-right-radius: .25em;
 }
@@ -29,7 +32,7 @@ body {
   .rounded-md-bottom-left {
     border-bottom-left-radius: .25em;
   }
-  .rounded-md-right-to-bottom {
+  .main-wrapper {
     border-top-right-radius: .25em;
     border-bottom-left-radius: 0;
   }
@@ -64,5 +67,17 @@ body {
 .skills-icon {
   font-size: 25px;
   width: 30px;
+}
+
+.main-wrapper section .section-title {
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: .5em;
+}
+
+.main-wrapper > section {
+  page-break-inside: avoid;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 /*# sourceMappingURL=main.css.map */
