@@ -25,20 +25,6 @@ body {
     border-bottom-right-radius: .25em;
 }
 
-@media screen and (min-width: 767px) {
-    .rounded-md-top-left-to-top {
-        border-top-right-radius: 0;
-    }
-    .rounded-md-bottom-left {
-        border-bottom-left-radius: .25em;
-    }
-    
-    .main-wrapper {
-        border-top-right-radius: .25em;
-        border-bottom-left-radius: 0;
-    }
-}
-
 .shadow-light {
     -webkit-box-shadow: 0 0 15px rgba(0,0,0,.2);
     box-shadow: 0 0 15px rgba(0,0,0,.2);
@@ -71,6 +57,7 @@ body {
 }
 
 .main-wrapper section .section-title {
+    font-size: 1.7em;
     font-weight: 400;
     margin-bottom: 0;
     margin-left: .5em;
@@ -80,4 +67,72 @@ body {
     page-break-inside: avoid;
     margin-top: 3em;
     margin-bottom: 3em;
+}
+
+section .section-content .item {
+    text-align: justify;
+    text-justify: inter-word;
+    text-decoration: none;
+}
+
+section .section-content .item .item-title {
+    font-weight: 400;
+}
+
+section .section-content .item .item-header {
+    display: grid;
+    display: -ms-grid;
+}
+    
+section .section-content .item .item-header img {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 576px) {
+    section .section-content .item .item-header {
+        grid-template-columns: auto auto;
+        grid-auto-rows: auto auto auto;
+    }
+    
+    section .section-content .item .item-header h5 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    section .section-content .item .item-header img {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .rounded-md-top-left-to-top {
+        border-top-right-radius: 0;
+    }
+    .rounded-md-bottom-left {
+        border-bottom-left-radius: .25em;
+    }
+    
+    .main-wrapper {
+        border-top-right-radius: .25em;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section .section-content .item .item-header {
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: auto auto;
+    }
+    
+    section .section-content .item .item-header h5 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    section .section-content .item .item-header img {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
 }
