@@ -77,6 +77,14 @@ section .section-content .item {
 
 section .section-content .item .item-title {
     font-weight: 400;
+    font-size: 1.25rem;
+    color: #343a40;
+}
+
+
+section .section-content .item .location, 
+section .section-content .item .date {
+    font-size: .9rem;
 }
 
 section .section-content .item .item-header {
@@ -95,7 +103,7 @@ section .section-content .item .item-header img {
         grid-auto-rows: auto auto auto;
     }
     
-    section .section-content .item .item-header h5 {
+    section .section-content .item .item-header .item-title {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
@@ -126,7 +134,7 @@ section .section-content .item .item-header img {
         grid-auto-rows: auto auto;
     }
     
-    section .section-content .item .item-header h5 {
+    section .section-content .item .item-header .item-title {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
