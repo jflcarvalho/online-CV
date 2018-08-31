@@ -97,6 +97,7 @@ section .section-content .item .item-header img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin: 10px;
 }
 
 @media screen and (min-width: 576px) {
@@ -134,12 +135,15 @@ section .section-content .item .item-header img {
     border-top-right-radius: .25em;
     border-bottom-left-radius: 0;
   }
+  section .section-content .item .item-header img {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
   section .section-content .item .item-header {
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    -ms-grid-columns: auto auto 120px;
+        grid-template-columns: auto auto 120px;
     grid-auto-rows: auto auto;
   }
   section .section-content .item .item-header .item-title {
