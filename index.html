@@ -1,323 +1,505 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Resume - jlfcarvalho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html><head>
+  <title>Online-CV</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FontAwesome v5.2.0 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- FontAwesome v5.2.0 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <!-- Bootstrap v4.1.3 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap v4.1.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Google Fonts Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
+  <!-- Google Fonts Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
-    <script src="assets/js/main.js" defer></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <script src="js/main.js" defer=""></script>
+
+  <!-- Bootstrap v4.1.3 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer=""></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer=""></script>
+
 </head>
-<body>
-    <div class="container rounded">
-        
+
+<body data-gr-c-s-loaded="true">
+  <div class="container rounded my-3">
+    <div id="content" class="row shadow-light rounded">
         <!-- Side Wrapper -->
-        <div class="row shadow-light rounded">
-            <section class="col-md-4 p-0">
-                <header class="p-3 py-5 bg-dark rounded-md-top-left-to-top">
-                    <a href="#" class="text-secondary position-absolute" style="margin-top: -2em;"><i class="fas fa-download"></i> Download CV</a>
-                    <img id="profile-img" src="assets/img/profile-square.jpg" alt="profile-img" width="50%" height="50%" class="shadow-light mb-3 rounded-circle mx-auto d-block border-3 border-secondary">
-                    <h1 class="text-light text-center mb-0 h2">JOÃO CARVALHO</h1>
-                    <h2 class="text-light text-center h6">Software Engineer / Student</h2>
-                </header>
+        <section class="col-md-4 p-0 d-flex flex-column">
+            <header class="p-3 py-5 bg-dark rounded-md-top-left-to-top">
+                <a href="javascript:downloadPDF()" class="text-secondary position-absolute" style="margin-top: -2em;"><i class="fas fa-download"></i> Download CV</a>
+                <img id="profile-img" src="img/profile-square.jpg" alt="profile-img" width="50%" class="shadow-light mb-3 rounded-circle mx-auto d-block border-3 border-secondary">
+                <h1 class="text-light text-center mb-0 h2">JOÃO CARVALHO</h1>
+                <h2 class="text-light text-center h6">Software Engineer / Student</h2>
+            </header>
+            
+            <!-- CONTACTS -->
+            <div class="p-5 bg-secondary rounded-md-bottom-left text-light flex-grow-1">
+                <ul class="list-unstyled contact-list">
+                    <li class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Porto, Portugal</span>
+                    </li>
+                    <li class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:joaocarvalho9@gmail.com?Subject=Contact%20me" class="text-light">joaocarvalho9@gmail.com</a>
+                    </li>
+                    <li class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/jflcarvalho/" class="text-light">/in/jflcarvalho</a>
+                    </li>
+                    <li class="github">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/jflcarvalho/" class="text-light">jflcarvalho</a>
+                    </li>
+                    <li class="gitlab">
+                        <i class="fab fa-gitlab"></i>
+                        <a href="https://gitlab.com/jflcarvalho/" class="text-light">jflcarvalho</a>
+                    </li>
+                    <li class="website">
+                        <i class="fas fa-link"></i>
+                        <a href="https://www.jflcarvalho.me" class="text-light">jflcarvalho.me</a>
+                    </li>
+                </ul>
+
+                <!-- ABOUT ME -->
+                <div id="about-me" class="my-5">
+                    <div class="d-flex align-items-center my-4">
+                        <i class="fas fa-user rounded-background-icon bg-dark"></i>
+                        <h4 class="mb-0 ml-2">About Me</h4>
+                    </div>
+                    <p class="text-justify">I'm a person who loves challenges, for me, it's the challenges that motivate me and make me better. So nothing better than studying in Faculty of Engineering of the University of Porto to have a good challenge. I’m a perfectionist person that loves see all things in there place.</p>
+                    <p class="text-justify">I would say that being happy, fun and determined are good words to describe me.</p>
+                </div>
                 
-                <!-- CONTACTS -->
-                <div class="p-5 bg-secondary rounded-md-bottom-left text-light">
-                    <ul class="list-unstyled contact-list">
-                        <li class="location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Porto, Portugal</span>
-                        </li>
-                        <li class="email">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:joaocarvalho9@gmail.com?Subject=Contact%20me" class="text-light">joaocarvalho9@gmail.com</a>
-                        </li>
-                        <li class="linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                            <a href="https://www.linkedin.com/in/jflcarvalho/" class="text-light">/in/jflcarvalho</a>
-                        </li>
-                        <li class="github">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/jflcarvalho/" class="text-light">jflcarvalho</a>
-                        </li>
-                        <li class="website">
-                            <i class="fas fa-link"></i>
-                            <a href="https://www.jflcarvalho.xyz" class="text-light">www.jflcarvalho.xyz</a>
-                        </li>
-                    </ul>
+                <!-- LANGUAGES -->
+                <div id="languages" class="my-5">
+                    <div class="d-flex align-items-center my-4">
+                        <i class="fas fa-globe rounded-background-icon bg-dark"></i>
+                        <h4 class="mb-0 ml-2">Languages</h4>
+                    </div>
+                    <div id="pt-languages" class="d-flex align-items-center my-2">
+                        <img src="img/pt-flag-bw.jpg" alt="Portuguese Flag" width="27" height="18" class="rounded">
+                        <span class="flex-fill ml-3">Portuguese <small class="text-dark">(Native)</small></span>
+                    </div>
+                    <div id="eng-languages" class="d-flex align-items-center my-2">
+                        <img src="img/eng-flag-bw.jpg" alt="British Flag" width="27" height="18" class="rounded">
+                        <span class="flex-fill ml-3">English <small class="text-dark">(Intermediate)</small></span>
+                    </div>
+                    <div id="es-languages" class="d-flex align-items-center my-2">
+                        <img src="img/es-flag-bw.jpg" alt="Spanish Flag" width="27" height="18" class="rounded">
+                        <span class="flex-fill ml-3">Spanish <small class="text-dark">(Beginner)</small></span>
+                    </div>
+                </div>
 
-                    <!-- ABOUT ME -->
-                    <div id="about-me" class="my-5">
-                        <div class="d-flex align-items-center my-4">
-                            <i class="fas fa-user rounded-background-icon bg-dark"></i>
-                            <h4 class="mb-0 ml-2">About Me</h4>
-                        </div>
-                        <p class="text-justify">I'm a person who loves challenges, for me, it's the challenges that motivate me and make me better. So nothing better than studying in Faculty of Engineering of the University of Porto to have a good challenge. I’m a perfectionist person that loves see all things in there place.</p>
-                        <p class="text-justify">I would say that being happy, fun and determined are good words to describe me.</p>
+                <!-- SKILLS -->
+                <div id="skills-side" class="my-5">
+                    <div class="d-flex align-items-center my-4">
+                        <i class="fas fa-crown rounded-background-icon bg-dark"></i>
+                        <h4 class="mb-0 ml-2">Skills</h4>
                     </div>
-                    
-                    <!-- LANGUAGES -->
-                    <div id="languages" class="my-5">
-                        <div class="d-flex align-items-center my-4">
-                            <i class="fas fa-globe rounded-background-icon bg-dark"></i>
-                            <h4 class="mb-0 ml-2">Languages</h4>
+                    <div class="d-flex align-items-center my-2">
+                        <i class="fab fa-js-square ml-1 skills-icon"></i>
+                        <div class="flex-fill ml-3">
+                            <span>Front-End</span>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 85%; height: 10px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div id="pt-languages" class="d-flex align-items-center my-2">
-                            <img src="assets/img/pt-flag-bw.jpg" alt="Portuguese Flag" width="27" height="18" class="rounded">
-                            <span class="flex-fill ml-3">Portuguese <small class="text-dark">(Native)</small></span>
+                    </div>                    <div class="d-flex align-items-center my-2">
+                        <i class="fas fa-cogs ml-1 skills-icon"></i>
+                        <div class="flex-fill ml-3">
+                            <span>Back-End</span>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 77%; height: 10px" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div id="eng-languages" class="d-flex align-items-center my-2">
-                            <img src="assets/img/eng-flag-bw.jpg" alt="British Flag" width="27" height="18" class="rounded">
-                            <span class="flex-fill ml-3">English <small class="text-dark">(Intermediate)</small></span>
+                    </div>                    <div class="d-flex align-items-center my-2">
+                        <i class="fas fa-brain ml-1 skills-icon"></i>
+                        <div class="flex-fill ml-3">
+                            <span>Artificial Intelligence</span>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%; height: 10px" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div id="es-languages" class="d-flex align-items-center my-2">
-                            <img src="assets/img/es-flag-bw.jpg" alt="Spanish Flag" width="27" height="18" class="rounded">
-                            <span class="flex-fill ml-3">Spanish <small class="text-dark">(Beginner)</small></span>
+                    </div>                    <div class="d-flex align-items-center my-2">
+                        <i class="fas fa-users ml-1 skills-icon"></i>
+                        <div class="flex-fill ml-3">
+                            <span>Team Work</span>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 88%; height: 10px" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                    </div>
+                    </div>                    <div class="d-flex align-items-center my-2">
+                        <i class="fas fa-chalkboard-teacher ml-1 skills-icon"></i>
+                        <div class="flex-fill ml-3">
+                            <span>LeaderShip</span>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 78%; height: 10px" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </section>
 
-                    <!-- SKILLS -->
-                    <div id="skills-side" class="my-5">
-                        <div class="d-flex align-items-center my-4">
-                            <i class="fas fa-crown rounded-background-icon bg-dark"></i>
-                            <h4 class="mb-0 ml-2">Skills</h4>
+        <!-- Main Wrapper -->
+        <main class="col-md-8 rounded-md-right-to-bottom main-wrapper">
+            <!-- PROFESSIONAL EXPERIENCE -->
+            <section id="pro-exp">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-suitcase rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Professional Experience</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=399883" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Assistant Professor of Programming Course</a>
+                            <img src="img/feup.png" width="100" height="32" alt="feup-logo">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017, 2018</div>
                         </div>
-                        <div id="front-end" class="d-flex align-items-center my-2">
-                            <i class="fab fa-js-square ml-1 skills-icon"></i>
-                            <div class="flex-fill ml-3">
-                                <span>Front-End</span>
-                                <div class="progress" style="height: 10px">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 85%; height: 10px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                        <p class="text-body">
+                            Assistant professor helping to teach the foundations of object-oriented programming languages. [C++, Visual Studio]
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=419988" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Assistant Professor of Programming Course</a>
+                            <img src="img/feup.png" width="100" height="32" alt="feup-logo">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2018, 2019</div>
                         </div>
-                        <div id="back-end" class="d-flex align-items-center my-2">
-                            <i class="fas fa-cogs ml-1 skills-icon"></i>
-                            <div class="flex-fill ml-3">
-                                <span>Back-End</span>
-                                <div class="progress" style="height: 10px">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 77%; height: 10px" aria-valuenow="77 " aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                        <p class="text-body">
+                            Assistant professor helping to teach the foundations of object-oriented programming languages. [C++, Visual Studio]
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=436435" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Assistant Professor of LCOM Course</a>
+                            <img src="img/feup.png" width="100" height="32" alt="feup-logo">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2019, 2020</div>
                         </div>
-                        <div id="art-intel" class="d-flex align-items-center my-2">
-                            <i class="fas fa-brain ml-1 skills-icon"></i>
-                            <div class="flex-fill ml-3">
-                                <span>Artificial Intelligence</span>
-                                <div class="progress" style="height: 10px">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 60%; height: 10px" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                        <p class="text-body">
+                            Assistant professor in classes helping students to learn about I/O devices in computer-based systems. [C, make, minix]
+                        </p>
+                    </div>                </div>
+            </section>
+            
+            <!-- EDUCATION -->
+            <section id="education">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-graduation-cap rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Education</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_VIEW?pv_curso_id=742" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Master in Informatics and Computing Engineering</a>
+                            <img src="img/feup.png" width="100" height="32" alt="feup-logo">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2015 - 2020</div>
                         </div>
-                        <div id="team-work" class="d-flex align-items-center my-2">
-                            <i class="fas fa-users ml-1 skills-icon"></i>
-                            <div class="flex-fill ml-3">
-                                <span>Team Work</span>
-                                <div class="progress" style="height: 10px">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 88%; height: 10px" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                        <p class="text-body">
+                            The Faculty of Engineering of the University of Porto
+                                                undertakes activities in the realms of education,
+                                                research, and innovation at international level.
+                                                Learning Informatics and Computation Engineering at FEUP
+                                                was conceived as requiring a full five years integrated
+                                                cycle of education, training and apprenticeship.
+                        </p>
+                    </div>                </div>
+            </section>
+            
+            <!-- EXTRA CURRICULAR -->
+            <section id="extra-curr">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-plus rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Extra Curricular</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                National Final F1 in Schools</h5>
+                            <img src="img/f1.png" width="45" height="20" alt="F1" in="" schools="" logo="">
+                            <div class="location text-secondary">Famalicão, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2014</div>
                         </div>
-                        <div id="leadership" class="d-flex align-items-center my-2">
-                            <i class="fas fa-chalkboard-teacher ml-1 skills-icon"></i>
-                            <div class="flex-fill ml-3">
-                                <span>LeaderShip</span>
-                                <div class="progress" style="height: 10px">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 78%; height: 10px" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                World Final F1 in Schools</h5>
+                            <img src="img/f1.png" width="45" height="20" alt="F1" in="" schools="" logo="">
+                            <div class="location text-secondary">Abu Dhabi, United Emirates</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2015</div>
                         </div>
-                    </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Spark PitchBootcamp</h5>
+                            <img src="img/bootcamp.png" width="45" height="25" alt="Cgra" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2016</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Member of Board - NIAEFEUP</h5>
+                            <img src="img/ni.png" width="44" height="44" alt="NI" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2016-2018</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                ENEI 2018 - Program Departement</h5>
+                            <img src="img/enei.png" width="33" height="44" alt="ENEI" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Guest Speaker at Ignite Portugal - ESEV</h5>
+                            <img src="img/ignite.jpg" width="44" height="33" alt="Ignite" portugal="" logo="">
+                            <div class="location text-secondary">ESEV, Viseu, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2020</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Chair of 8th Edition Talk a Bit</h5>
+                            <img src="img/tab.png" width="44" height="44" alt="Talk" a="" bit="" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2020</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-laptop rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Projects</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="localhost:8000" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Cgra</a>
+                            <img src="img/cgra.png" width="44" height="44" alt="Cgra" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="https://jflcarvlho.me#" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Radin-Multiplayer</a>
+                            <img src="img/lpoo.png" width="44" height="44" alt="Lpoo" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="localhost:8000" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                EzeeDo</a>
+                            <img src="img/EzeeDo.png" width="44" height="44" alt="EzeeDo" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="localhost:8000" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Latrunculi_XXI</a>
+                            <img src="img/Latrunculi_XXI.png" width="44" height="44" alt="Latrunculi_XXI" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="localhost:8000" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                SegFault</a>
+                            <img src="img/SegFault.png" width="44" height="44" alt="SegFault" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <a class="item-title text-dark" href="localhost:8000" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Tactode</a>
+                            <img src="img/Tactode.png" width="44" height="44" alt="Tactode" logo="">
+                            <div class="location text-secondary">FEUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2019</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <a href="#">View More...</a>
                 </div>
             </section>
 
-            <!-- Main Wrapper -->
-            <main class="col-md-8 rounded-md-right-to-bottom main-wrapper">
-                <!-- PROFESSIONAL EXPERIENCE -->
-                <section id="pro-exp">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-suitcase rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Professional Experience</h4>
-                    </header>
-                    <div class="section-content">
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <a class="item-title text-dark" href="https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=399883" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Assistant Professor of Programming Course</a>
-                                <img src="assets/img/feup.png" alt="image" width="100" height="32">
-                                <div class="location text-secondary">FEUP, Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
-                            </div>
-                            <p class="text-body">
-                                Assistant professor helping to teach the foundations of object-oriented programming languages. [C++, Visual Studio]
-                            </p>
+            <!-- CHALLENGES -->
+            <section id="challenges">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-code rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Code Challenges</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Google HashCode 2018</h5>
+                            <img src="img/hashcode.png" width="100" height="21" alt="HashCode" logo="">
+                            <div class="location text-secondary">Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
                         </div>
-                    </div>
-                </section>
-                
-                <!-- EDUCATION -->
-                <section id="education">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-graduation-cap rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Education</h4>
-                    </header>
-                    <div class="section-content">
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <a class="item-title text-dark" href="https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_VIEW?pv_curso_id=742" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Master in Informatics and Computing Engineering</a>
-                                <img src="assets/img/feup.png" alt="image" width="100" height="32">
-                                <div class="location text-secondary">FEUP, Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2015 - 2020</div>
-                            </div>
-                            <p class="text-body">
-                                The Faculty of Engineering of the University of Porto
-                                undertakes activities in the realms of education,
-                                research, and innovation at international level.
-                                Learning Informatics and Computation Engineering at FEUP
-                                was conceived as requiring a full five years integrated
-                                cycle of education, training and apprenticeship.
-                            </p>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Google HashCode 2017</h5>
+                            <img src="img/hashcode.png" width="100" height="21" alt="HashCode" logo="">
+                            <div class="location text-secondary">Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
                         </div>
-                    </div>
-                </section>
-                
-                <!-- EXTRA CURRICULAR -->
-                <section id="extra-curr">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-plus rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Extra Curricular</h4>
-                    </header>
-                </section>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Porto Summer of Code 2016</h5>
+                            <img src="img/pscode.png" width="44" height="44" alt="Porto" summer="" of="" code="" logo="">
+                            <div class="location text-secondary">Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2016</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Porto Graphics Game Jam 2015</h5>
+                            <img src="img/game-jam.png" width="100" height="44" alt="Porto" graphics="" game="" jam="" logo="">
+                            <div class="location text-secondary">FCUP, Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2015</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                </div>
+            </section>
 
-                <!-- PROJECTS -->
-                <section id="projects">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-laptop rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Projects</h4>
-                    </header>
-                </section>
+            <!-- VOLUNTEERS -->
+            <section id="volunteers">
+                <header class="d-flex align-items-center my-4">
+                    <i class="fas fa-hand-holding-heart rounded-background-icon bg-dark text-light"></i>
+                    <h4 class="section-title">Volunteers</h4>
+                </header>
+                <div class="section-content">
+                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Comic-Con Portugal 2017</h5>
+                            <img src="img/ComicConPortugal.png" width="100" height="30" alt="Comic-Con" logo="">
+                            <div class="location text-secondary">Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Web Summit 2017</h5>
+                            <img src="img/web_summit.png" width="100" height="45" alt="Web" summit="" logo="">
+                            <div class="location text-secondary">Lisbon, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Comic-Con Portugal 2016</h5>
+                            <img src="img/ComicConPortugal.png" width="100" height="30" alt="Comic-Con" logo="">
+                            <div class="location text-secondary">Porto, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2016</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                    <div class="item">
+                        <div class="item-header mb-3">
+                            <h5 class="item-title text-dark">
+                                Web Summit 2019</h5>
+                            <img src="img/web_summit.png" width="100" height="45" alt="Web" summit="" logo="">
+                            <div class="location text-secondary">Lisbon, Portugal</div>
+                            <div class="date ml-sm-auto mr-lg-3 text-secondary">2019</div>
+                        </div>
+                        <p class="text-body">
+                            
+                        </p>
+                    </div>                </div>
+            </section>
+        </main>
+    </div>  
+</div>
 
-                <!-- CHALLENGES -->
-                <section id="challenges">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-code rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Code Challenges</h4>
-                    </header>
-                    <div class="section-content">
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Google HashCode 2018</h5>
-                                <img src="assets/img/hashcode.png" alt="image" width="100" height="21" alt="HashCode Logo">
-                                <div class="location text-secondary">Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Google HashCode 2017</h5>
-                                <img src="assets/img/hashcode.png" alt="image" width="100" height="21" alt="HashCode Logo">
-                                <div class="location text-secondary">Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Porto Summer of Code 2016</h5>
-                                <img src="assets/img/pscode.png" alt="image" width="44" height="44" alt="Porto Summer of Code Logo">
-                                <div class="location text-secondary">Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2016</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Porto Graphics Game Jam 2015</h5>
-                                <img src="assets/img/game-jam.png" alt="image" width="100" height="44" alt="Porto Graphics Game Jam Logo">
-                                <div class="location text-secondary">FCUP, Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2015</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                    </div>
-                </section>
 
-                <!-- VOLUNTEERS -->
-                <section id="volunteers">
-                    <header class="d-flex align-items-center my-4">
-                        <i class="fas fa-hand-holding-heart rounded-background-icon bg-dark text-light"></i>
-                        <h4 class="section-title">Volunteers</h4>
-                    </header>
-                    <div class="section-content">
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Comic-Con Portugal 2018</h5>
-                                <img src="assets/img/ComicConPortugal.png" alt="image" width="100" height="30" alt="Comic-Con Logo">
-                                <div class="location text-secondary">Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2018</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Web Summit 2017</h5>
-                                <img src="assets/img/web_summit.png" alt="image" width="100" height="45" alt="Web Summit Logo">
-                                <div class="location text-secondary">Lisbon, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-header mb-3">
-                                <h5 class="item-title text-dark">
-                                    Comic-Con Portugal 2017</h5>
-                                <img src="assets/img/ComicConPortugal.png" alt="image" width="100" height="30" alt="Comic-Con Logo">
-                                <div class="location text-secondary">Porto, Portugal</div>
-                                <div class="date ml-sm-auto mr-lg-3 text-secondary">2017</div>
-                            </div>
-                            <p class="text-body">
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div>
-        
-    </div>
-
-    <!-- Bootstrap v4.1.3 -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-    <!-- jsPDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
-</body>
-</html>
+</body></html>
